@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5D调研适应性测验</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>5D调研适应性测验</h1>
+    <p>通过循序渐进的问题，帮助您系统化完成调研规划。</p>
+    
+    <form id="quiz-form">
+      <div class="step" id="step-1">
+        <h2>1. 明确调研目标</h2>
+        <label>
+          <input type="radio" name="goal" value="验证新业务的市场需求"> 验证新业务的市场需求
+        </label>
+        <label>
+          <input type="radio" name="goal" value="判断现有业务扩展性"> 判断现有业务扩展性
+        </label>
+        <label>
+          <input type="radio" name="goal" value="优化现有模式"> 优化现有模式
+        </label>
+        <button type="button" onclick="nextStep(2)">下一步</button>
+      </div>
+
+      <div id="result" class="hidden">
+        <h2>测验结果</h2>
+        <p id="result-text"></p>
+        <button onclick="restartQuiz()">重新开始</button>
+      </div>
+    </form>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
